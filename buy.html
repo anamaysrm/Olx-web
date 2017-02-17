@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+    #form{
+      margin-top: 50px;
+      max-width: 350px;
+      color: white;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+    .bod{
+      background-image: url(fa.jpg);
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+    #detail{
+      text-align: center;
+      color: black;
+      font-weight: 700;
+      font-family: times new roman;
+      font-size: 40px;
+    }
+    #g{
+      border-radius: 10px;
+    }
+    </style>
+  </head>
+  <body class="bod">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="l">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" id="ana">HOME</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="a"><span class="glyphicon glyphicon-user" ></span> Profile</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal" id="b"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+          <li><a href="#" id="c"><span class="glyphicon glyphicon-triangle-right"></span> About Us</a></li>
+  		<li><a href="#" id="d"><span class="glyphicon glyphicon-phone" ></span> Contact Us</a></li>
+
+  	  </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="form">
+  <h2 id="detail"><mark id="g">DETAILS</mark></h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="name" class="control-label">Name: </label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name">
+    </div>
+      <div class="form-group">
+      <label for="sel1" class="control-label">Select Year:</label>
+      <select class="form-control" id="sel1">
+        <option>First</option>
+        <option>Second</option>
+        <option>Third</option>
+        <option>Fourth</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sel1" class="control-label">Select Department: </label>
+      <select class="form-control" id="sel1">
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>EIE</option>
+        <option>Biotech</option>
+        <option>Biomedical</option>
+        <option>Genetics</option>
+        <option>IT</option>
+        <option>SWE</option>
+        <option>Mechanical</option>
+        <option>Aerospace</option>
+        <option>Civil</option>
+      </select>
+    </div>
+    <div class="form-group">
+    <label for="no" class="control-label">Contact number:</label>
+    <input type="decimal" class="form-control" id="no" placeholder="Enter number"/>
+  </div>
+  <div class="form-group">
+  <label for="f" class="control-label">Address:</label>
+  <textarea class="form-control" id="f" placeholder="Enter your Address"></textarea>
+  </div>
+  <div class="form-group">
+  <label for="n" class="control-label">Book name:</label>
+  <input type="text" class="form-control" id="n" placeholder="Enter book name"/>
+</div>
+<div class="form-group">
+<label for="f" class="control-label">Description:</label>
+<textarea class="form-control" id="f" placeholder="Add some details about the book"></textarea>
+</div>
+    <div class="form-group">
+      <label class="control-label">Select File</label>
+<input id="input-1" type="file" class="file">
+    </div>
+
+
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+  </form>
+</div>
+</body>
+</html>
